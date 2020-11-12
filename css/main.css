@@ -114,12 +114,23 @@ h2::before {
   width: 100px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 360px) {
+  .purple-content {
+    margin: 2em 0 2em;
+  }
+  .purple-content .subtitle {
+    margin-bottom: 0;
+  }
   .skills {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .move-up {
+    margin-top: -3.5em;
   }
 }
 

@@ -105,10 +105,22 @@ h2::before {
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 360px) {
+    .purple-content {
+        margin: 2em 0 2em;
+    
+        .subtitle {
+            margin-bottom: 0;
+        }
+    }
+
     .skills {
         display: grid;
         grid-template-columns: repeat(2,auto);
+        justify-content: space-around;
+    }
+    .move-up {
+        margin-top: -3.5em;
     }
 }
 
